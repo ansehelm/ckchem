@@ -31,44 +31,28 @@ if ($type == 1){
 	$str = $cats[0]->text;
 	$arr = explode("\n", $str);
 	$amount = count($arr);
-	if ($amount >= 30) {
-		$lh = 18;
-	} else if ($amount >= 20 && $amount < 30) {
-		$lh = 20;
-	} else if ($amount < 20 && $amount >= 15){
-		$lh = 30;
-	} else if ($amount < 15){
-		$lh = 40;
-	};
 } else if ($type == 2) {
 	$str = $cats[0]->text;
 	$arr = explode("\n", $str);
 	$str2 = $cats[1]->text;
 	$arr2 = explode("\n", $str2);
 	$amount = count($arr) + count($arr2);
-	if ($amount >= 30) {
-		$lh = 18;
-	} else if ($amount >= 20 && $amount < 30) {
-		$lh = 20;
-	} else if ($amount < 20 && $amount >= 15){
-		$lh = 30;
-	} else if ($amount < 15){
-		$lh = 40;
-	};
 };
 ?>
 
-<div class="jumbotron">
-	<div class="row tagline hideonmobile pro-tagline">
-		<div class="col-md-11 col-md-offset-1 ">
-			<h1>PRODUCTS</h1>
-			<h2>In Pharma, Nutra,. Enzyme and Food Ingredient</h2>
-			<br><br>
-		</div>
+<div class="tagline hideonmobile pro-tagline">
+	<div class="col-md-11 col-md-offset-1 ">
+		<h1>PRODUCTS</h1>
+		<h2>In Pharma, Nutra,. Enzyme and Food Ingredient</h2>
+		<br><br>
 	</div>
+</div>
+<div class="products">
 	<div class="product-banner hideonnormal"></div>
-	<div class="row">
-		<div class="col-md-6 col-md-offset-1 owl-slide">
+
+	<!-- Section 1 -->
+	<div class="owl-slide">
+		<div class="owl-slide-inner">
 			<?php 
 			$o = 0;
 			$i = 0;
@@ -80,7 +64,7 @@ if ($type == 1){
 					echo "<div class='item'>";
 				};
 
-				echo "<a class='product-icon' href='products/".$i."' style='background-image: url(public"."/"."img"."/"."product-icon".$i.".jpg)'></a>";
+				echo "<a class='product-icon' href='products/".$i."' style='background-image: url(public"."/"."img"."/"."product".$i.".jpg)'></a>";
 
 				if ($o == 6 || $i == $max){
 					echo "</div>";
@@ -89,16 +73,19 @@ if ($type == 1){
 			};
 			?> 
 		</div>
-		<div class="col-md-3 col-md-offset-1 product-search hideonmobile">
-			<input type="text" placeholder="Search"><input type="submit" value="SEARCH">
-		</div>
 	</div>
-	<div class="row" style="line-height: <?=$lh?>px;">
-		<div class="col-md-3 col-md-offset-1 product-holder hideonmobile">
-			<img src="public/img/product-1.png">
+
+	<!-- Section 2 -->
+	<div class="product-search hideonmobile">
+		<input type="text" placeholder="Search"><input type="submit" value="SEARCH">
+	</div>
+
+
+	<div class="product-main">
+		<div class="product-holder hideonmobile" style="background-image: url(public/img/product<?=$proid?>.jpg)">
 		</div>
 
-		<div class="col-md-2 product-list">
+		<div class="product-list">
 			<h1>
 				<?php 
 				if($type == 3){
@@ -125,7 +112,7 @@ if ($type == 1){
 			</ul>
 		</div>
 
-		<div class="col-md-3 product-list">
+		<div class="product-list">
 			<h1>
 				<?php 
 				if($type == 1 || $type == 3){
@@ -152,10 +139,11 @@ if ($type == 1){
 			</ul>
 		</div>
 		<hr class="hideonnormal">
-		<div class="col-md-3 product-interest">
+		<div class="product-interest">
 			<h1>Interested?</h1>
 			<h1>Contact us now!</h1>
 			<div class="button"><i class="fa fa-envelope-o"></i>ENQUIRY</div>
 		</div>
 	</div>
+	<div class="product-bottom">&nbsp;</div>
 </div>

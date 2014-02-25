@@ -12,8 +12,8 @@ $config["js"] = array('jquery.min','bootstrap','jquery.fancybox','jquery.scrollT
 <meta charset="utf-8">
 <base href="<?=$GLOBALS["base_url"]?>">
 <head>
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,500,400,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,600' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,500,400,300' rel='stylesheet' type='text/css'>
 	<title>CK Chemicals</title>
 	<?= links($config["css"],"css"); ?>
 	<script language="javascript" type="text/javascript" src=""></script>

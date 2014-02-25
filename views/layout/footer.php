@@ -56,7 +56,7 @@
 
 			});
 
-			$(".owl-slide").owlCarousel({
+			$(".owl-slide-inner").owlCarousel({
 
 				navigation : true,
 				slideSpeed : 300,
