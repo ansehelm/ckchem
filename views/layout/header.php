@@ -20,11 +20,11 @@ $config["js"] = array('jquery.min','bootstrap','jquery.fancybox','jquery.scrollT
 
 </head>
 <body>
-	<div class="jumbotron header">
-		<div class="col-md-6 col-md-offset-1 headerl">
+	<div class="header">
+		<div class="header-logo">
 			<img src="public/img/logo.png" class="logo">
 		</div>
-		<div class="col-md-5 headermenu">
+		<div class="headermenu">
 			<a href="" <?php if(!isset($_GET["key"]) || $_GET["key"]=="home"){echo "class='current'";} ?>>home</a>
 			<a href="products" <?php if(isset($_GET["key"])){if($_GET["key"]=="products"){echo "class='current'";}} ?>>products</a>
 			<a href="services" <?php if(isset($_GET["key"])){if($_GET["key"]=="services"){echo "class='current'";}} ?>>services</a>

@@ -61,7 +61,6 @@ li {
 .nopadding {
 	padding: 0 !important;
 }
-
 .header {
 	background: none;
 	color: #fff;
@@ -69,9 +68,35 @@ li {
 	font-weight: bold;
 	margin-bottom: 0;
 	padding: 0% 0;
-	height: 5%;
-	position: absolute;
+	height: 6%;
+	position: relative;
 	width: 100%;
+	display:block;
+	background: url("../img/header-bg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+}
+.header .header-logo {
+	width:60%;
+	display: inline-block;
+	position: absolute;
+	left:0;
+	height: 100%;
+	padding: 0.5% 0 0 9%;
+}
+.header-logo img {
+	vertical-align: middle;
+	width: 37%;
+}
+.headermenu {
+	width: 40%;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	height: 100%;
+	padding: 0.6%;
+	/* line-height: 304%; */
 }
 .header a {
 	font-family: "Raleway", sans-serif;
@@ -132,11 +157,11 @@ a.fa:hover {
 	z-index: -1;
 }
 .frontbutton-wrap {
-width: 88%;
-height: 90%;
-margin-top: 3%;
-margin-left: 12%;
-z-index: 99999;
+	width: 88%;
+	height: 90%;
+	margin-top: 3%;
+	margin-left: 12%;
+	z-index: 99999;
 }
 .frontbutton {
 	float: left;
@@ -189,16 +214,16 @@ z-index: 99999;
 }
 
 .news {
-position: absolute;
-width: 33%;
-height: 14%;
-margin-top: -18%;
-margin-left: 13%;
--webkit-transform: skew(-45deg);
--moz-transform: skew(-45deg);
--o-transform: skew(-45deg);
-transform: skew(-45deg);
-background: #eee;
+	position: absolute;
+	width: 33%;
+	height: 14%;
+	margin-top: -18%;
+	margin-left: 13%;
+	-webkit-transform: skew(-45deg);
+	-moz-transform: skew(-45deg);
+	-o-transform: skew(-45deg);
+	transform: skew(-45deg);
+	background: #eee;
 }
 .unskew {
 	-webkit-transform: skew(45deg); 
