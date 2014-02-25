@@ -31,13 +31,7 @@
 			The company believe problem solving is the best way to satisfy customer needs, the company will be always position themselves as a solution provider for their customer base on their knowledge and experience, and not just purely buy and sell.
 		</p>
 	</div>
-</div>
-<div class="jumbotron hideonmobile">
-	<div class="col-md-5 col-md-offset-1 home-tagline">
-		<h1>Excellence</h1>
-		<h2>In Pharma, Nutra,. Enzyme and Food Ingredient</h2>
-	</div>
-</div>
+	
 <div class="news">
 	<div class="unskew">
 		<div class="row">
@@ -50,5 +44,12 @@
 				<div class="item"><strong>Sep 24, 2013</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan aliquam varius.</div>
 			</div>
 		</div>
+	</div>
+</div>
+</div>
+<div class="jumbotron hideonmobile">
+	<div class="col-md-5 col-md-offset-1 home-tagline">
+		<h1>Excellence</h1>
+		<h2>In Pharma, Nutra,. Enzyme and Food Ingredient</h2>
 	</div>
 </div>
